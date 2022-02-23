@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <section class="splash">
+    <img src="/images/background.jpg" alt="background">
+    <div class="splash-inner">
+      <div class="nav-bar">
+        <a href="#about"><h3>ABOUT</h3></a>
+        <a href="#finder"><h3>FINDER</h3></a>
+      </div>
+      <div class="main-header">
+        <h1 class="header">PATHFINDER</h1>
+        <h2 class="sub-text">FOR TRAVELLERS</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="about hidden">
+    <div class="container">
+      <div data-aos="fade-up" data-aos-offset="400" data-aos-duration="600" class="journeys">
+        <img src="/images/1.jpg" alt="image-1" class="main-img">
+        <div class="text">
+          <h2 class="img-header">PLAN YOUR JOURNEYS</h2>
+          <p class="img-text">Pick attractions and book hotels</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="600" class="boredom">
+        <img src="/images/2.jpg" alt="image-2" class="main-img">
+        <div class="text">
+          <h2 class="img-header">MINIMALIZE BOREDOM</h2>
+          <p class="img-text">Pick routes that are short and attractive</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="road-finder">
+  </section>
+
+  <section class="footer">
+    <h1>All rights reserved</h1>
+  </section>
+
+  <script id="template-finder" type="text/x-handlebars-template">
+    <div class="container">
+      <h5 class="finder-header"> {{ title }} </h5>
+      <div class="road-grid"></div>
+      <a href="#" class="finder-btn">{{ btnText }}</a>
+    </div>
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>

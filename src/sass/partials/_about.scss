@@ -1,0 +1,45 @@
+.container {
+  z-index: 9999;
+  position: relative;
+
+  .journeys {
+    position: absolute;
+    top: -350px;
+    left: 150px;
+
+    img {
+      width: 700px;
+      height: 500px;
+
+    }
+
+    .text{
+      position: absolute;
+      right: -250px;
+      bottom: 100px;
+      color: $color-light;
+
+    }
+
+  }
+
+  .boredom {
+    position: absolute;
+    top: 250px;
+    right: 80px;
+
+    img {
+      width: 1100px;
+      height: 600px;
+
+    }
+
+    .text{
+      position: absolute;
+      top: 100px;
+      left: -352px;
+      color: $color-light;
+    }
+  }
+
+}

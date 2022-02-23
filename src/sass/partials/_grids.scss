@@ -1,0 +1,21 @@
+.road-grid {
+  @include center();
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  .field{
+    content: '';
+    width: 48px;
+    height: 48px;
+    border: 1px solid #fff;
+
+  }
+
+}
+
+.active {
+  background-color: $color-grass;
+}
